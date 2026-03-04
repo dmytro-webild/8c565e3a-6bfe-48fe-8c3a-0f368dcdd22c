@@ -7,11 +7,11 @@ import TestimonialAboutCard from '@/components/sections/about/TestimonialAboutCa
 import FeatureHoverPattern from '@/components/sections/feature/featureHoverPattern/FeatureHoverPattern';
 import ProductCardThree from '@/components/sections/product/ProductCardThree';
 import MetricCardTen from '@/components/sections/metrics/MetricCardTen';
-import TeamCardTwo from '@/components/sections/team/TeamCardTwo';
 import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
 import ContactText from '@/components/sections/contact/ContactText';
 import FooterCard from '@/components/sections/footer/FooterCard';
-import { Award, BarChart3, Brain, CheckCircle2, Code2, Github, Handshake, Lightbulb, Linkedin, Mail, MapPin, Phone, Search, Star, Target, TrendingUp, Workflow, Wrench, Zap } from "lucide-react";
+import TestimonialCardOne from '@/components/sections/testimonial/TestimonialCardOne';
+import { Award, BarChart3, Brain, CheckCircle2, Code2, Github, Handshake, Lightbulb, Linkedin, Mail, MapPin, Phone, Search, Star, Target, TrendingUp, Workflow, Wrench, Zap, Check } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -217,42 +217,36 @@ export default function LandingPage() {
       </div>
 
       <div id="social-proof" data-section="social-proof">
-        <TeamCardTwo
+        <TestimonialCardOne
           title="Zobacz, co mówią o nas klienci w Google"
           description="Transparentne opinie zweryfikowane – 5.0 gwiazdek od zaufanych klientów"
           tag="Opinie z Google"
           tagIcon={Star}
           tagAnimation="slide-up"
-          members={[
+          testimonials={[
             {
-              id: "1",              name: "Marcin Kowalski",              role: "Właściciel",              description: "Platforma rekrutacyjna zmienia zupełnie nasz HR. Polecam!",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/professional-headshot-of-a-confident-bus-1772646442150-2e1e63e4.png",              imageAlt: "Marcin Kowalski",              socialLinks: [
-                { icon: Star, url: "#" }
-              ]
+              id: "1",              name: "Marcin Kowalski",              role: "Właściciel",              company: "TechRecruit",              rating: 5,
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/professional-headshot-of-a-confident-bus-1772646442150-2e1e63e4.png",              imageAlt: "Marcin Kowalski"
             },
             {
-              id: "2",              name: "Anna Nowak",              role: "Dyrektor",              description: "System zarządzania warsztatem zaoszczędził nam setki godzin rocznie.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/professional-portrait-of-a-company-direc-1772646442028-775cdaab.png",              imageAlt: "Anna Nowak",              socialLinks: [
-                { icon: Star, url: "#" }
-              ]
+              id: "2",              name: "Anna Nowak",              role: "Dyrektor",              company: "AutoService",              rating: 5,
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/professional-portrait-of-a-company-direc-1772646442028-775cdaab.png",              imageAlt: "Anna Nowak"
             },
             {
-              id: "3",              name: "Piotr Lewandowski",              role: "CEO",              description: "CRM dla agencji zintegrował wszystkie nasze procesy. Świetna praca!",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/professional-headshot-of-an-agency-owner-1772646443428-1c53d6f7.png",              imageAlt: "Piotr Lewandowski",              socialLinks: [
-                { icon: Star, url: "#" }
-              ]
+              id: "3",              name: "Piotr Lewandowski",              role: "CEO",              company: "Marketing Pro",              rating: 5,
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/professional-headshot-of-an-agency-owner-1772646443428-1c53d6f7.png",              imageAlt: "Piotr Lewandowski"
             },
             {
-              id: "4",              name: "Katarzyna Zając",              role: "HR Manager",              description: "Najlepszy wybór, jaki mogliśmy zrobić. Profesjonalny zespół!",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/professional-portrait-of-a-recruiter-or--1772646443961-89d3d657.png",              imageAlt: "Katarzyna Zając",              socialLinks: [
-                { icon: Star, url: "#" }
-              ]
+              id: "4",              name: "Katarzyna Zając",              role: "HR Manager",              company: "Staffing Excellence",              rating: 5,
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/professional-portrait-of-a-recruiter-or--1772646443961-89d3d657.png",              imageAlt: "Katarzyna Zając"
             },
             {
-              id: "5",              name: "Tomasz Kruk",              role: "Founder",              description: "Wsparcie 24/7 i transparentna komunikacja – dokładnie to czego potrzebowaliśmy.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/professional-headshot-of-a-tech-savvy-bu-1772646441921-ee1f86c4.png",              imageAlt: "Tomasz Kruk",              socialLinks: [
-                { icon: Star, url: "#" }
-              ]
+              id: "5",              name: "Tomasz Kruk",              role: "Founder",              company: "Cloud Innovations",              rating: 5,
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/professional-headshot-of-a-tech-savvy-bu-1772646441921-ee1f86c4.png",              imageAlt: "Tomasz Kruk"
             },
             {
-              id: "6",              name: "Magdalena Szymczak",              role: "Director",              description: "Jesteśmy zachwyceni rezultatami. 5.0 gwiazdek, gorąco polecam!",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/professional-business-portrait-of-a-conf-1772646442053-3a2aecf3.png",              imageAlt: "Magdalena Szymczak",              socialLinks: [
-                { icon: Star, url: "#" }
-              ]
+              id: "6",              name: "Magdalena Szymczak",              role: "Director",              company: "Enterprise Systems",              rating: 5,
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/professional-business-portrait-of-a-conf-1772646442053-3a2aecf3.png",              imageAlt: "Magdalena Szymczak"
             }
           ]}
           gridVariant="uniform-all-items-equal"
