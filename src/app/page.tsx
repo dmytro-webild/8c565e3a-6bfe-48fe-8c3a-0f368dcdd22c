@@ -217,53 +217,18 @@ export default function LandingPage() {
       </div>
 
       <div id="social-proof" data-section="social-proof">
-        <TeamCardTwo
+        <SocialProofOne
           title="Zobacz, co mówią o nas klienci w Google"
           description="Transparentne opinie zweryfikowane – 5.0 gwiazdek od zaufanych klientów"
           tag="Opinie z Google"
           tagIcon={Star}
           tagAnimation="slide-up"
-          members={[
-            {
-              id: "1",              name: "Marcin Kowalski",              role: "Właściciel",              description: "Platforma rekrutacyjna zmienia zupełnie nasz HR. Polecam!",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/professional-headshot-of-a-confident-bus-1772646442150-2e1e63e4.png",              imageAlt: "Marcin Kowalski",              socialLinks: [
-                { icon: Star, url: "#" }
-              ]
-            },
-            {
-              id: "2",              name: "Anna Nowak",              role: "Dyrektor",              description: "System zarządzania warsztatem zaoszczędził nam setki godzin rocznie.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/professional-portrait-of-a-company-direc-1772646442028-775cdaab.png",              imageAlt: "Anna Nowak",              socialLinks: [
-                { icon: Star, url: "#" }
-              ]
-            },
-            {
-              id: "3",              name: "Piotr Lewandowski",              role: "CEO",              description: "CRM dla agencji zintegrował wszystkie nasze procesy. Świetna praca!",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/professional-headshot-of-an-agency-owner-1772646443428-1c53d6f7.png",              imageAlt: "Piotr Lewandowski",              socialLinks: [
-                { icon: Star, url: "#" }
-              ]
-            },
-            {
-              id: "4",              name: "Katarzyna Zając",              role: "HR Manager",              description: "Najlepszy wybór, jaki mogliśmy zrobić. Profesjonalny zespół!",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/professional-portrait-of-a-recruiter-or--1772646443961-89d3d657.png",              imageAlt: "Katarzyna Zając",              socialLinks: [
-                { icon: Star, url: "#" }
-              ]
-            },
-            {
-              id: "5",              name: "Tomasz Kruk",              role: "Founder",              description: "Wsparcie 24/7 i transparentna komunikacja – dokładnie to czego potrzebowaliśmy.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/professional-headshot-of-a-tech-savvy-bu-1772646441921-ee1f86c4.png",              imageAlt: "Tomasz Kruk",              socialLinks: [
-                { icon: Star, url: "#" }
-              ]
-            },
-            {
-              id: "6",              name: "Magdalena Szymczak",              role: "Director",              description: "Jesteśmy zachwyceni rezultatami. 5.0 gwiazdek, gorąco polecam!",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/professional-business-portrait-of-a-conf-1772646442053-3a2aecf3.png",              imageAlt: "Magdalena Szymczak",              socialLinks: [
-                { icon: Star, url: "#" }
-              ]
-            }
-          ]}
-          gridVariant="uniform-all-items-equal"
-          animationType="slide-up"
+          names={["Marcin Kowalski", "Anna Nowak", "Piotr Lewandowski", "Katarzyna Zając", "Tomasz Kruk", "Magdalena Szymczak"]}
           textboxLayout="default"
           useInvertedBackground={true}
+          speed={40}
+          showCard={true}
           ariaLabel="Sekcja opinii z Google"
-          buttons={[
-            { text: "Przeczytaj opinię na Google", href: "https://google.com" }
-          ]}
-          buttonAnimation="slide-up"
         />
       </div>
 
