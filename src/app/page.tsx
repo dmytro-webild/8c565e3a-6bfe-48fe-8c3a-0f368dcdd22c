@@ -157,7 +157,7 @@ export default function LandingPage() {
           title="Dlaczego My"
           description="Technologia to narzędzie. Liczy się efekt. Nasze podejście oparte na rezultatach biznesowych."
           tag="Przewaga Konkurencyjna"
-          tagIcon={Star}
+          tagIcon={Sparkles}
           tagAnimation="slide-up"
           metrics={[
             {
