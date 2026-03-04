@@ -219,15 +219,15 @@ export default function LandingPage() {
         <div className="space-y-12 py-20 px-4 sm:px-6 md:px-8">
           <div className="flex flex-col items-center text-center">
             <div className="mb-4 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-cta/10">
-              <span className="text-sm font-medium text-primary-cta">Google Reviews</span>
+              <span className="text-sm font-medium text-primary-cta">Opinie Google</span>
             </div>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Clean Google Reviews Section</h2>
-            <p className="text-lg md:text-xl text-foreground/70 max-w-2xl">Ready to display customer testimonials and ratings</p>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Zadowoleni Klienci</h2>
+            <p className="text-lg md:text-xl text-foreground/70 max-w-2xl">Odkryj, co mówią o nas nasi klienci na Google</p>
           </div>
 
           <div className="flex justify-center pt-8">
             <a href="https://google.com" target="_blank" rel="noopener noreferrer" className="px-8 py-3 bg-primary-cta text-primary-cta-text rounded-lg font-semibold hover:opacity-90 transition-opacity">
-              View Reviews on Google
+              Przejdź do Opinii na Google
             </a>
           </div>
         </div>
