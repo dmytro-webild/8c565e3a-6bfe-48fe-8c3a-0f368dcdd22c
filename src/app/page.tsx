@@ -57,25 +57,25 @@ export default function LandingPage() {
           buttonAnimation="slide-up"
           mediaItems={[
             {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/modern-saas-dashboard-interface-with-ai--1772646442924-01f0b869.png",              imageAlt: "Dashboard interfejsu AI"
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/modern-saas-dashboard-interface-with-ai--1772646442924-01f0b869.png?_wi=1",              imageAlt: "Dashboard interfejsu AI"
             },
             {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/professional-mockup-of-a-recruitment-pla-1772646443733-1f2246bd.png",              imageAlt: "Platform rekrutacyjna"
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/professional-mockup-of-a-recruitment-pla-1772646443733-1f2246bd.png?_wi=1",              imageAlt: "Platform rekrutacyjna"
             },
             {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/workshop-management-system-interface-dis-1772646442811-e87de6cc.png",              imageAlt: "System zarządzania"
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/workshop-management-system-interface-dis-1772646442811-e87de6cc.png?_wi=1",              imageAlt: "System zarządzania"
             },
             {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/marketing-agency-crm-dashboard-with-cont-1772646443395-5375cae3.png",              imageAlt: "CRM dla agencji"
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/marketing-agency-crm-dashboard-with-cont-1772646443395-5375cae3.png?_wi=1",              imageAlt: "CRM dla agencji"
             },
             {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/modern-saas-dashboard-interface-with-ai--1772646442924-01f0b869.png",              imageAlt: "Automatyzacja procesów"
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/modern-saas-dashboard-interface-with-ai--1772646442924-01f0b869.png?_wi=2",              imageAlt: "Automatyzacja procesów"
             },
             {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/professional-mockup-of-a-recruitment-pla-1772646443733-1f2246bd.png",              imageAlt: "Integracje API"
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/professional-mockup-of-a-recruitment-pla-1772646443733-1f2246bd.png?_wi=2",              imageAlt: "Integracje API"
             },
             {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/workshop-management-system-interface-dis-1772646442811-e87de6cc.png",              imageAlt: "Platformy webowe"
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/workshop-management-system-interface-dis-1772646442811-e87de6cc.png?_wi=2",              imageAlt: "Platformy webowe"
             }
           ]}
           ariaLabel="Hero sekcja WOLNY STUDIO AI"
@@ -91,7 +91,7 @@ export default function LandingPage() {
           description="Skupiamy się na realnych problemach"
           subdescription="WOLNY STUDIO AI"
           icon={Target}
-          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/modern-saas-dashboard-interface-with-ai--1772646442924-01f0b869.png"
+          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/modern-saas-dashboard-interface-with-ai--1772646442924-01f0b869.png?_wi=3"
           imageAlt="Studio AI workspace"
           mediaAnimation="slide-up"
           useInvertedBackground={false}
@@ -136,13 +136,13 @@ export default function LandingPage() {
           tagAnimation="slide-up"
           products={[
             {
-              id: "1",              name: "Platforma Rekrutacyjna AI",              price: "Redukcja czasu selekcji CV o 70%",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/professional-mockup-of-a-recruitment-pla-1772646443733-1f2246bd.png",              imageAlt: "Platform rekrutacyjny z AI"
+              id: "1",              name: "Platforma Rekrutacyjna AI",              price: "Redukcja czasu selekcji CV o 70%",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/professional-mockup-of-a-recruitment-pla-1772646443733-1f2246bd.png?_wi=3",              imageAlt: "Platform rekrutacyjny z AI"
             },
             {
-              id: "2",              name: "System Zarządzania Warsztatem",              price: "90% mniej czasu na kosztorysy",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/workshop-management-system-interface-dis-1772646442811-e87de6cc.png",              imageAlt: "System zarządzania warsztatem"
+              id: "2",              name: "System Zarządzania Warsztatem",              price: "90% mniej czasu na kosztorysy",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/workshop-management-system-interface-dis-1772646442811-e87de6cc.png?_wi=3",              imageAlt: "System zarządzania warsztatem"
             },
             {
-              id: "3",              name: "CRM dla Agencji Marketingowej",              price: "Centralizacja 100% procesów",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/marketing-agency-crm-dashboard-with-cont-1772646443395-5375cae3.png",              imageAlt: "CRM dla agencji"
+              id: "3",              name: "CRM dla Agencji Marketingowej",              price: "Centralizacja 100% procesów",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/marketing-agency-crm-dashboard-with-cont-1772646443395-5375cae3.png?_wi=2",              imageAlt: "CRM dla agencji"
             }
           ]}
           gridVariant="three-columns-all-equal-width"
