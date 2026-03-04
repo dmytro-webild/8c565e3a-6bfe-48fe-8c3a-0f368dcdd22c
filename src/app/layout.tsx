@@ -1,54 +1,20 @@
 import type { Metadata } from "next";
-import { Halant } from "next/font/google";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { ServiceWrapper } from "@/components/ServiceWrapper";
-import Tag from "@/tag/Tag";
 
-const halant = Halant({
-  variable: "--font-halant",  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-});
-
-const inter = Inter({
-  variable: "--font-inter",  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "WOLNY STUDIO AI - Systemy Webowe, Automatyzacje, AI",  description: "Agencja technologiczna specjalizująca się w systemach webowych, automatyzacjach i rozwiązaniach AI dla firm. Budujemy systemy, które zarabiają.",  keywords: "systemy webowe, automatyzacja, AI, platform development, CRM, aplikacje webowe, technologia, digital transformation",  metadataBase: new URL("https://walnystudio.ai"),
-  alternates: {
-    canonical: "https://walnystudio.ai"
-  },
-  openGraph: {
-    title: "WOLNY STUDIO AI - Partnerstwo w Rozwoju Biznesu",    description: "Tworzymy aplikacje webowe, platformy AI i automatyzacje, które skalują biznes. Rzeczywiste problemy, rzeczywiste rozwiązania.",    url: "https://walnystudio.ai",    siteName: "WOLNY STUDIO AI",    type: "website",    images: [
-      {
-        url: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/modern-saas-dashboard-interface-with-ai--1772646442924-01f0b869.png",        alt: "WOLNY STUDIO AI - Platform AI"
-      }
-    ]
-  },
-  twitter: {
-    card: "summary_large_image",    title: "WOLNY STUDIO AI",    description: "Budujemy systemy, które zarabiają dla Twojej firmy",    images: ["https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/modern-saas-dashboard-interface-with-ai--1772646442924-01f0b869.png"]
-  },
-  robots: {
-    index: true,
-    follow: true
-  }
-};
+  title: "WOLNY STUDIO AI - Systemy, Aplikacje, Automatyzacje",  description: "Tworzymy aplikacje webowe, platformy AI i automatyzacje, które eliminują chaos, oszczędzają czas i zwiększają zysk."};
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <ServiceWrapper>
-        <body
-          className={`${halant.variable} ${inter.variable} antialiased`}
-        >
-          <Tag />
-          {children}
-        
+    <html lang="pl">
+      <body className={inter.className}>{children}
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -1416,7 +1382,6 @@ export default function RootLayout({
           }}
         />
       </body>
-      </ServiceWrapper>
     </html>
   );
 }
