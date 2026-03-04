@@ -5,7 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "WOLNY STUDIO AI - Systemy, Aplikacje, Automatyzacje",  description: "Tworzymy aplikacje webowe, platformy AI i automatyzacje, które eliminują chaos, oszczędzają czas i zwiększają zysk."};
+  title: "WOLNY STUDIO AI - Systemy, Aplikacje, Automatyzacje",  description: "Tworzymy aplikacje webowe, platformy AI i automatyzacje, które eliminują chaos, oszczędzają czas i zwiększają zysk."
+};
 
 export default function RootLayout({
   children,
