@@ -7,11 +7,11 @@ import TestimonialAboutCard from '@/components/sections/about/TestimonialAboutCa
 import FeatureHoverPattern from '@/components/sections/feature/featureHoverPattern/FeatureHoverPattern';
 import ProductCardThree from '@/components/sections/product/ProductCardThree';
 import MetricCardTen from '@/components/sections/metrics/MetricCardTen';
-import FeatureCardTwelve from '@/components/sections/feature/FeatureCardTwelve';
+import TeamCardTwo from '@/components/sections/team/TeamCardTwo';
 import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
 import ContactText from '@/components/sections/contact/ContactText';
 import FooterCard from '@/components/sections/footer/FooterCard';
-import { Award, BarChart3, Brain, CheckCircle2, Code2, Github, Handshake, Lightbulb, Linkedin, Mail, MapPin, Phone, Search, Star, Target, TrendingUp, Workflow, Wrench, Zap, Shield, CheckCircle } from "lucide-react";
+import { Award, BarChart3, Brain, CheckCircle2, Code2, Github, Handshake, Lightbulb, Linkedin, Mail, MapPin, Phone, Search, Star, Target, TrendingUp, Workflow, Wrench, Zap } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -217,68 +217,53 @@ export default function LandingPage() {
       </div>
 
       <div id="social-proof" data-section="social-proof">
-        <FeatureCardTwelve
+        <TeamCardTwo
           title="Zobacz, co mówią o nas klienci w Google"
           description="Transparentne opinie zweryfikowane – 5.0 gwiazdek od zaufanych klientów"
           tag="Opinie z Google"
           tagIcon={Star}
           tagAnimation="slide-up"
-          features={[
+          members={[
             {
-              id: "1",              label: "Marcin",              title: "Marcin Kowalski",              items: ["Platforma rekrutacyjna zmienia zupełnie nasz HR. Polecam!"]
+              id: "1",              name: "Marcin Kowalski",              role: "Właściciel",              description: "Platforma rekrutacyjna zmienia zupełnie nasz HR. Polecam!",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/professional-headshot-of-a-confident-bus-1772646442150-2e1e63e4.png",              imageAlt: "Marcin Kowalski",              socialLinks: [
+                { icon: Star, url: "#" }
+              ]
             },
             {
-              id: "2",              label: "Anna",              title: "Anna Nowak",              items: ["System zarządzania warsztatem zaoszczędził nam setki godzin rocznie."]
+              id: "2",              name: "Anna Nowak",              role: "Dyrektor",              description: "System zarządzania warsztatem zaoszczędził nam setki godzin rocznie.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/professional-portrait-of-a-company-direc-1772646442028-775cdaab.png",              imageAlt: "Anna Nowak",              socialLinks: [
+                { icon: Star, url: "#" }
+              ]
             },
             {
-              id: "3",              label: "Piotr",              title: "Piotr Lewandowski",              items: ["CRM dla agencji zintegrował wszystkie nasze procesy. Świetna praca!"]
+              id: "3",              name: "Piotr Lewandowski",              role: "CEO",              description: "CRM dla agencji zintegrował wszystkie nasze procesy. Świetna praca!",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/professional-headshot-of-an-agency-owner-1772646443428-1c53d6f7.png",              imageAlt: "Piotr Lewandowski",              socialLinks: [
+                { icon: Star, url: "#" }
+              ]
             },
             {
-              id: "4",              label: "Katarzyna",              title: "Katarzyna Zając",              items: ["Najlepszy wybór, jaki mogliśmy zrobić. Profesjonalny zespół!"]
+              id: "4",              name: "Katarzyna Zając",              role: "HR Manager",              description: "Najlepszy wybór, jaki mogliśmy zrobić. Profesjonalny zespół!",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/professional-portrait-of-a-recruiter-or--1772646443961-89d3d657.png",              imageAlt: "Katarzyna Zając",              socialLinks: [
+                { icon: Star, url: "#" }
+              ]
             },
             {
-              id: "5",              label: "Tomasz",              title: "Tomasz Kruk",              items: ["Wsparcie 24/7 i transparentna komunikacja – dokładnie to czego potrzebowaliśmy."]
+              id: "5",              name: "Tomasz Kruk",              role: "Founder",              description: "Wsparcie 24/7 i transparentna komunikacja – dokładnie to czego potrzebowaliśmy.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/professional-headshot-of-a-tech-savvy-bu-1772646441921-ee1f86c4.png",              imageAlt: "Tomasz Kruk",              socialLinks: [
+                { icon: Star, url: "#" }
+              ]
             },
             {
-              id: "6",              label: "Magdalena",              title: "Magdalena Szymczak",              items: ["Jesteśmy zachwyceni rezultatami. 5.0 gwiazdek, gorąco polecam!"]
+              id: "6",              name: "Magdalena Szymczak",              role: "Director",              description: "Jesteśmy zachwyceni rezultatami. 5.0 gwiazdek, gorąco polecam!",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/professional-business-portrait-of-a-conf-1772646442053-3a2aecf3.png",              imageAlt: "Magdalena Szymczak",              socialLinks: [
+                { icon: Star, url: "#" }
+              ]
             }
           ]}
+          gridVariant="uniform-all-items-equal"
           animationType="slide-up"
           textboxLayout="default"
           useInvertedBackground={true}
+          ariaLabel="Sekcja opinii z Google"
           buttons={[
-            { text: "Przeczytaj opinie na Google", href: "https://google.com/search" }
+            { text: "Przeczytaj opinię na Google", href: "https://google.com" }
           ]}
           buttonAnimation="slide-up"
-          ariaLabel="Sekcja opinii z Google"
-        />
-      </div>
-
-      <div id="trust" data-section="trust">
-        <FeatureCardTwelve
-          title="Bezpieczeństwo i Weryfikacja Opinii"
-          description="Wszystkie nasze opinie są zweryfikowane i pochodzą od rzeczywistych klientów. Pracujemy z przejrzystością."
-          tag="Zaufanie"
-          tagIcon={Shield}
-          tagAnimation="slide-up"
-          features={[
-            {
-              id: "1",              label: "Opinie",              title: "Opinie Zweryfikowane",              items: ["100% autentycznych opinii od rzeczywistych klientów WOLNY STUDIO AI"]
-            },
-            {
-              id: "2",              label: "Bezpieczeństwo",              title: "Bezpieczeństwo Danych",              items: ["Certyfikacje bezpieczeństwa i ochrona prywatności klientów na najwyższym poziomie"]
-            },
-            {
-              id: "3",              label: "Rating",              title: "5.0 Gwiazdek",              items: ["Konsekwentna ocena 5.0 na Google od początkowych projektów do dzisiaj"]
-            },
-            {
-              id: "4",              label: "Projekty",              title: "Projekty Zakończone",              items: ["XX+ zweryfikowanych projektów z pozytywnym feedback od klientów"]
-            }
-          ]}
-          animationType="slide-up"
-          textboxLayout="default"
-          useInvertedBackground={false}
-          ariaLabel="Sekcja zaufania i weryfikacji"
         />
       </div>
 
