@@ -89,7 +89,7 @@ export default function LandingPage() {
           tagAnimation="slide-up"
           title="Nie jesteśmy software housem. Jesteśmy partnerem w rozwoju Twojego biznesu."
           description="Skupiamy się na realnych problemach"
-          subdescription="WOLNY STUDIO AI • Średnio +250% ROI w 6 miesięcy"
+          subdescription="Dedicated Business Partner, Not Just Vendors – Twoim sukcesem kierują się nasze strategie i technologia."
           icon={Target}
           imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/modern-saas-dashboard-interface-with-ai--1772646442924-01f0b869.png?_wi=3"
           imageAlt="Studio AI workspace"
