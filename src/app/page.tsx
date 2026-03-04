@@ -10,7 +10,7 @@ import MetricCardTen from '@/components/sections/metrics/MetricCardTen';
 import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
 import ContactText from '@/components/sections/contact/ContactText';
 import FooterCard from '@/components/sections/footer/FooterCard';
-import { Award, BarChart3, Brain, CheckCircle2, Code2, Github, Handshake, Lightbulb, Linkedin, Mail, MapPin, Phone, Search, Target, TrendingUp, Workflow, Wrench, Zap, ShieldCheck, Users, Sparkles } from "lucide-react";
+import { Award, BarChart3, Brain, CheckCircle2, Code2, Github, Handshake, Lightbulb, Linkedin, Mail, MapPin, Phone, Search, Target, TrendingUp, Workflow, Wrench, Zap, ShieldCheck, Users, Sparkles, TrendingDown, RotateCw, Activity } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -127,29 +127,142 @@ export default function LandingPage() {
       </div>
 
       <div id="cases" data-section="cases">
-        <ProductCardThree
-          title="Nasze Realizacje"
-          description="Rzeczywiste projekty z rzeczywistymi rezultatami. Każdy projekt = konkretne problemy rozwiązane, wymierny ROI."
-          tag="Case Studies"
-          tagIcon={Award}
-          tagAnimation="slide-up"
-          products={[
-            {
-              id: "1",              name: "Platforma Rekrutacyjna AI",              price: "Redukcja czasu selekcji CV o 70%",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/professional-mockup-of-a-recruitment-pla-1772646443733-1f2246bd.png?_wi=3",              imageAlt: "Platform rekrutacyjny z AI"
-            },
-            {
-              id: "2",              name: "System Zarządzania Warsztatem",              price: "90% mniej czasu na kosztorysy",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/workshop-management-system-interface-dis-1772646442811-e87de6cc.png?_wi=3",              imageAlt: "System zarządzania warsztatem"
-            },
-            {
-              id: "3",              name: "CRM dla Agencji Marketingowej",              price: "Centralizacja 100% procesów",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/marketing-agency-crm-dashboard-with-cont-1772646443395-5375cae3.png?_wi=2",              imageAlt: "CRM dla agencji"
-            }
-          ]}
-          gridVariant="three-columns-all-equal-width"
-          animationType="slide-up"
-          textboxLayout="default"
-          useInvertedBackground={false}
-          ariaLabel="Sekcja realizacji"
-        />
+        <div className="py-20 px-4 sm:px-6 md:px-8">
+          <div className="space-y-16">
+            <div className="flex flex-col items-center text-center">
+              <div className="mb-4 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-cta/10">
+                <span className="text-sm font-medium text-primary-cta">Case Studies</span>
+              </div>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Nasze Realizacje</h2>
+              <p className="text-lg md:text-xl text-foreground/70 max-w-2xl">Rzeczywiste projekty z rzeczywistymi rezultatami. Każdy projekt = konkretne problemy rozwiązane, wymierny ROI.</p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+              {/* Case Study 1: Recruitment Platform */}
+              <div className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div className="relative overflow-hidden bg-gradient-to-br from-blue-900 to-slate-900 aspect-video">
+                  <img 
+                    src="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/professional-mockup-of-a-recruitment-pla-1772646443733-1f2246bd.png?_wi=1" 
+                    alt="Platforma Rekrutacyjna AI"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="p-6 md:p-8 space-y-4">
+                  <h3 className="text-2xl md:text-3xl font-bold text-foreground">Platforma Rekrutacyjna AI</h3>
+                  <div className="space-y-3">
+                    <div>
+                      <h4 className="font-semibold text-primary-cta mb-2">Problem</h4>
+                      <p className="text-foreground/70">Nasz klient spędzał 40+ godzin tygodniowo na manualnym przeszukiwaniu i ocenianiu CV. Proces był chaotyczny, a najlepsi kandydaci ginęli w przepełnionych skrzynkach e-mail.</p>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-primary-cta mb-2">Rozwiązanie</h4>
+                      <p className="text-foreground/70">Stworzyliśmy inteligentny system AI z real-time dashboardem. Platforma automatycznie scoring'uje kandydatów, wysyła notyfikacje do zespołu i integruje się z systemem HR.</p>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-primary-cta mb-2">Rezultat</h4>
+                      <div className="flex flex-col gap-2">
+                        <div className="flex items-center gap-2">
+                          <TrendingDown className="w-5 h-5 text-green-500" />
+                          <span className="text-foreground font-semibold">70% redukcja czasu selekcji CV</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <Activity className="w-5 h-5 text-green-500" />
+                          <span className="text-foreground font-semibold">200% wzrost jakości najmu</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <RotateCw className="w-5 h-5 text-green-500" />
+                          <span className="text-foreground font-semibold">24/7 automatyczne procesowanie</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Case Study 2: Workshop Management */}
+              <div className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div className="relative overflow-hidden bg-gradient-to-br from-orange-900 to-red-900 aspect-video">
+                  <img 
+                    src="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/workshop-management-system-interface-dis-1772646442811-e87de6cc.png?_wi=1" 
+                    alt="System Zarządzania Warsztatem"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="p-6 md:p-8 space-y-4">
+                  <h3 className="text-2xl md:text-3xl font-bold text-foreground">System Zarządzania Warsztatem</h3>
+                  <div className="space-y-3">
+                    <div>
+                      <h4 className="font-semibold text-primary-cta mb-2">Problem</h4>
+                      <p className="text-foreground/70">Warsztat samochodowy zarządzał harmonogramem napraw za pomocą karteczek i SMS-ów. Brak widoczności kosztów, opóźnienia, niezadowoleni klienci.</p>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-primary-cta mb-2">Rozwiązanie</h4>
+                      <p className="text-foreground/70">Wdrożyliśmy system zarządzania z real-time dashboardem, automaty kosztorysu, trackingiem napraw i integracją z SMS/email do klientów.</p>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-primary-cta mb-2">Rezultat</h4>
+                      <div className="flex flex-col gap-2">
+                        <div className="flex items-center gap-2">
+                          <TrendingDown className="w-5 h-5 text-green-500" />
+                          <span className="text-foreground font-semibold">90% mniej czasu na kosztorysy</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <Activity className="w-5 h-5 text-green-500" />
+                          <span className="text-foreground font-semibold">35% wzrost przepustowości</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <RotateCw className="w-5 h-5 text-green-500" />
+                          <span className="text-foreground font-semibold">+40% zadowolenie klientów</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Case Study 3: Marketing Agency CRM */}
+              <div className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div className="relative overflow-hidden bg-gradient-to-br from-purple-900 to-indigo-900 aspect-video">
+                  <img 
+                    src="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/marketing-agency-crm-dashboard-with-cont-1772646443395-5375cae3.png?_wi=1" 
+                    alt="CRM dla Agencji Marketingowej"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="p-6 md:p-8 space-y-4">
+                  <h3 className="text-2xl md:text-3xl font-bold text-foreground">CRM dla Agencji Marketingowej</h3>
+                  <div className="space-y-3">
+                    <div>
+                      <h4 className="font-semibold text-primary-cta mb-2">Problem</h4>
+                      <p className="text-foreground/70">Agencja marketingowa prowadziła kampanie klientów w pięciu różnych narzędziach. Brak centralnego widoku, duplikaty danych, strata informacji.</p>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-primary-cta mb-2">Rozwiązanie</h4>
+                      <p className="text-foreground/70">Zbudowaliśmy dedykowany CRM z centralizacją wszystkich procesów, automatyzacją kampanii, raportowaniem i integracją z narzędziami martech.</p>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-primary-cta mb-2">Rezultat</h4>
+                      <div className="flex flex-col gap-2">
+                        <div className="flex items-center gap-2">
+                          <TrendingDown className="w-5 h-5 text-green-500" />
+                          <span className="text-foreground font-semibold">Centralizacja 100% procesów</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <Activity className="w-5 h-5 text-green-500" />
+                          <span className="text-foreground font-semibold">50% wzrost produktywności zespołu</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <RotateCw className="w-5 h-5 text-green-500" />
+                          <span className="text-foreground font-semibold">+25% retencja klientów</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div id="why-us" data-section="why-us">
