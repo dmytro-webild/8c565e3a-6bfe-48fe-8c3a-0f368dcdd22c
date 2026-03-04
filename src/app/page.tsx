@@ -45,7 +45,7 @@ export default function LandingPage() {
       <div id="hero" data-section="hero">
         <HeroBillboardCarousel
           title="Budujemy systemy, które zarabiają dla Twojej firmy."
-          description="Tworzymy aplikacje webowe, platformy AI i automatyzacje, które eliminują chaos, oszczędzają czas i zwiększają zysk. Partnerstwo, które skaluje biznes."
+          description="Średnio +250% ROI w 6 miesięcy. Tworzymy aplikacje webowe, platformy AI i automatyzacje, które eliminują chaos, oszczędzają czas i zwiększają zysk. Partnerstwo, które skaluje biznes."
           tag="Innowacyjne Rozwiązania"
           tagIcon={Zap}
           tagAnimation="slide-up"
