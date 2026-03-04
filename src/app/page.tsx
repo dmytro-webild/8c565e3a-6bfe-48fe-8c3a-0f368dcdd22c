@@ -9,7 +9,7 @@ import ProductCardThree from '@/components/sections/product/ProductCardThree';
 import MetricCardTen from '@/components/sections/metrics/MetricCardTen';
 import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
 import ContactText from '@/components/sections/contact/ContactText';
-import FooterBaseCard from '@/components/sections/footer/FooterBaseCard';
+import FooterCard from '@/components/sections/footer/FooterCard';
 import { Award, BarChart3, Brain, CheckCircle2, Code2, Github, Handshake, Lightbulb, Linkedin, Mail, MapPin, Phone, Search, Target, TrendingUp, Workflow, Wrench, Zap, ShieldCheck, Users, Sparkles, TrendingDown, RotateCw, Activity } from "lucide-react";
 
 export default function LandingPage() {
@@ -377,32 +377,14 @@ export default function LandingPage() {
       </div>
 
       <div id="footer" data-section="footer">
-        <FooterBaseCard
+        <FooterCard
           logoText="WOLNY STUDIO AI"
-          columns={[
-            {
-              title: "Firma",              items: [
-                { label: "O nas", href: "#about" },
-                { label: "Proces", href: "#process" },
-                { label: "Kontakt", href: "#contact" }
-              ]
-            },
-            {
-              title: "Usługi",              items: [
-                { label: "Systemy Webowe", href: "#services" },
-                { label: "Automatyzacje AI", href: "#services" },
-                { label: "Digitalizacja", href: "#services" }
-              ]
-            },
-            {
-              title: "Kontakt",              items: [
-                { label: "hello@walnystudio.ai", href: "mailto:hello@walnystudio.ai" },
-                { label: "Warszawa, Polska", href: "#" }
-              ]
-            }
-          ]}
           copyrightText="© 2025 WOLNY STUDIO AI. Tworzymy systemy, które zarabiają."
-          onPrivacyClick={() => {}}
+          socialLinks={[
+            { icon: Linkedin, href: "https://linkedin.com", ariaLabel: "LinkedIn" },
+            { icon: Github, href: "https://github.com", ariaLabel: "GitHub" },
+            { icon: Mail, href: "mailto:hello@walnystudio.ai", ariaLabel: "Email" }
+          ]}
           ariaLabel="Stopka strony"
         />
       </div>
