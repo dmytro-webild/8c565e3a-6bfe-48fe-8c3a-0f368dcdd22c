@@ -225,28 +225,22 @@ export default function LandingPage() {
           tagAnimation="slide-up"
           features={[
             {
-              icon: Star,
-              title: "Marcin Kowalski",              description: "Platforma rekrutacyjna zmienia zupełnie nasz HR. Polecam!",              button: { text: "Google Reviews", href: "https://google.com/search" }
+              id: "1",              label: "Marcin",              title: "Marcin Kowalski",              items: ["Platforma rekrutacyjna zmienia zupełnie nasz HR. Polecam!"]
             },
             {
-              icon: Star,
-              title: "Anna Nowak",              description: "System zarządzania warsztatem zaoszczędził nam setki godzin rocznie.",              button: { text: "Google Reviews", href: "https://google.com/search" }
+              id: "2",              label: "Anna",              title: "Anna Nowak",              items: ["System zarządzania warsztatem zaoszczędził nam setki godzin rocznie."]
             },
             {
-              icon: Star,
-              title: "Piotr Lewandowski",              description: "CRM dla agencji zintegrował wszystkie nasze procesy. Świetna praca!",              button: { text: "Google Reviews", href: "https://google.com/search" }
+              id: "3",              label: "Piotr",              title: "Piotr Lewandowski",              items: ["CRM dla agencji zintegrował wszystkie nasze procesy. Świetna praca!"]
             },
             {
-              icon: Star,
-              title: "Katarzyna Zając",              description: "Najlepszy wybór, jaki mogliśmy zrobić. Profesjonalny zespół!",              button: { text: "Google Reviews", href: "https://google.com/search" }
+              id: "4",              label: "Katarzyna",              title: "Katarzyna Zając",              items: ["Najlepszy wybór, jaki mogliśmy zrobić. Profesjonalny zespół!"]
             },
             {
-              icon: Star,
-              title: "Tomasz Kruk",              description: "Wsparcie 24/7 i transparentna komunikacja – dokładnie to czego potrzebowaliśmy.",              button: { text: "Google Reviews", href: "https://google.com/search" }
+              id: "5",              label: "Tomasz",              title: "Tomasz Kruk",              items: ["Wsparcie 24/7 i transparentna komunikacja – dokładnie to czego potrzebowaliśmy."]
             },
             {
-              icon: Star,
-              title: "Magdalena Szymczak",              description: "Jesteśmy zachwyceni rezultatami. 5.0 gwiazdek, gorąco polecam!",              button: { text: "Google Reviews", href: "https://google.com/search" }
+              id: "6",              label: "Magdalena",              title: "Magdalena Szymczak",              items: ["Jesteśmy zachwyceni rezultatami. 5.0 gwiazdek, gorąco polecam!"]
             }
           ]}
           animationType="slide-up"
@@ -269,20 +263,16 @@ export default function LandingPage() {
           tagAnimation="slide-up"
           features={[
             {
-              icon: CheckCircle,
-              title: "Opinie Zweryfikowane",              description: "100% autentycznych opinii od rzeczywistych klientów WOLNY STUDIO AI"
+              id: "1",              label: "Opinie",              title: "Opinie Zweryfikowane",              items: ["100% autentycznych opinii od rzeczywistych klientów WOLNY STUDIO AI"]
             },
             {
-              icon: Shield,
-              title: "Bezpieczeństwo Danych",              description: "Certyfikacje bezpieczeństwa i ochrona prywatności klientów na najwyższym poziomie"
+              id: "2",              label: "Bezpieczeństwo",              title: "Bezpieczeństwo Danych",              items: ["Certyfikacje bezpieczeństwa i ochrona prywatności klientów na najwyższym poziomie"]
             },
             {
-              icon: Star,
-              title: "5.0 Gwiazdek",              description: "Konsekwentna ocena 5.0 na Google od początkowych projektów do dzisiaj"
+              id: "3",              label: "Rating",              title: "5.0 Gwiazdek",              items: ["Konsekwentna ocena 5.0 na Google od początkowych projektów do dzisiaj"]
             },
             {
-              icon: CheckCircle,
-              title: "Projekty Zakończone",              description: "XX+ zweryfikowanych projektów z pozytywnym feedback od klientów"
+              id: "4",              label: "Projekty",              title: "Projekty Zakończone",              items: ["XX+ zweryfikowanych projektów z pozytywnym feedback od klientów"]
             }
           ]}
           animationType="slide-up"
