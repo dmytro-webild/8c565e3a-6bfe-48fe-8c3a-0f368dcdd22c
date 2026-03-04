@@ -21,7 +21,7 @@ export default function LandingPage() {
       borderRadius="soft"
       contentWidth="mediumSmall"
       sizing="large"
-      background="noiseDiagonalGradient"
+      background="circleGradient"
       cardStyle="outline"
       primaryButtonStyle="shadow"
       secondaryButtonStyle="solid"
@@ -49,7 +49,7 @@ export default function LandingPage() {
           tag="Innowacyjne Rozwiązania"
           tagIcon={Zap}
           tagAnimation="slide-up"
-          background={{ variant: "noiseDiagonalGradient" }}
+          background={{ variant: "sparkles-gradient" }}
           buttons={[
             { text: "Rozpocznij projekt", href: "contact" },
             { text: "Zobacz realizacje", href: "cases" }
