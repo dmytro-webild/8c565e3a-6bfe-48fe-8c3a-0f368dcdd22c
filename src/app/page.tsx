@@ -37,8 +37,8 @@ export default function LandingPage() {
             { name: "Kontakt", id: "contact" },
             { name: "Rozpocznij projekt", id: "/rozpocznij-projekt" }
           ]}
-          bottomLeftText="Warszawa, Polska"
-          bottomRightText="hello@walnystudio.ai"
+          bottomLeftText="Rajcza, Polska"
+          bottomRightText="wsa.labs.wolny@gmail.com"
         />
       </div>
 
@@ -384,7 +384,7 @@ export default function LandingPage() {
           socialLinks={[
             { icon: Linkedin, href: "https://linkedin.com", ariaLabel: "LinkedIn" },
             { icon: Github, href: "https://github.com", ariaLabel: "GitHub" },
-            { icon: Mail, href: "mailto:hello@walnystudio.ai", ariaLabel: "Email" }
+            { icon: Mail, href: "mailto:wsa.labs.wolny@gmail.com", ariaLabel: "Email" }
           ]}
           ariaLabel="Stopka strony"
         />
