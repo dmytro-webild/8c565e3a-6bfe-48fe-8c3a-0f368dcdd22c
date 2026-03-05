@@ -66,8 +66,8 @@ export default function RozpocznijProjektPage() {
             { name: "Kontakt", id: "contact" },
             { name: "Rozpocznij projekt", id: "/rozpocznij-projekt" }
           ]}
-          bottomLeftText="Warszawa, Polska"
-          bottomRightText="hello@walnystudio.ai"
+          bottomLeftText="Rajcza, Polska"
+          bottomRightText="wsa.labs.wolny@gmail.com"
         />
       </div>
 
