@@ -59,11 +59,12 @@ export default function RozpocznijProjektPage() {
         <NavbarStyleFullscreen
           brandName="WOLNY STUDIO AI"
           navItems={[
-            { name: "Usługi", id: "/" },
-            { name: "Realizacje", id: "/" },
-            { name: "Proces", id: "/" },
-            { name: "O nas", id: "/" },
-            { name: "Kontakt", id: "/" }
+            { name: "Usługi", id: "services" },
+            { name: "Realizacje", id: "cases" },
+            { name: "Proces", id: "process" },
+            { name: "O nas", id: "about" },
+            { name: "Kontakt", id: "contact" },
+            { name: "Rozpocznij projekt", id: "/rozpocznij-projekt" }
           ]}
           bottomLeftText="Warszawa, Polska"
           bottomRightText="hello@walnystudio.ai"
