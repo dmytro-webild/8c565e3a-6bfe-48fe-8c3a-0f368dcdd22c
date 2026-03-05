@@ -34,7 +34,8 @@ export default function LandingPage() {
             { name: "Realizacje", id: "cases" },
             { name: "Proces", id: "process" },
             { name: "O nas", id: "about" },
-            { name: "Kontakt", id: "contact" }
+            { name: "Kontakt", id: "contact" },
+            { name: "Rozpocznij projekt", id: "/rozpocznij-projekt" }
           ]}
           bottomLeftText="Warszawa, Polska"
           bottomRightText="hello@walnystudio.ai"
@@ -50,7 +51,7 @@ export default function LandingPage() {
           tagAnimation="slide-up"
           background={{ variant: "sparkles-gradient" }}
           buttons={[
-            { text: "Rozpocznij projekt", href: "contact" },
+            { text: "Rozpocznij projekt", href: "/rozpocznij-projekt" },
             { text: "Zobacz realizacje", href: "cases" }
           ]}
           buttonAnimation="slide-up"
@@ -108,15 +109,15 @@ export default function LandingPage() {
           features={[
             {
               icon: Code2,
-              title: "Systemy i Aplikacje Webowe",              description: "Dedykowane platformy, CRM, systemy zarządzania, panele klienta. Rozwiązania stworzone pod Twoją firmę.",              button: { text: "Oszczędź 20h/tydzień", href: "contact" }
+              title: "Systemy i Aplikacje Webowe",              description: "Dedykowane platformy, CRM, systemy zarządzania, panele klienta. Rozwiązania stworzone pod Twoją firmę.",              button: { text: "Oszczędź 20h/tydzień", href: "/rozpocznij-projekt" }
             },
             {
               icon: Brain,
-              title: "Automatyzacje i AI",              description: "Boty AI, automatyczna obsługa klienta, scoring CV, workflow, integracje API. Procesy które pracują 24/7.",              button: { text: "Zwiększ Przychód o 40%", href: "contact" }
+              title: "Automatyzacje i AI",              description: "Boty AI, automatyczna obsługa klienta, scoring CV, workflow, integracje API. Procesy które pracują 24/7.",              button: { text: "Zwiększ Przychód o 40%", href: "/rozpocznij-projekt" }
             },
             {
               icon: TrendingUp,
-              title: "Digitalizacja Biznesu",              description: "Zamieniamy Excel i papier na nowoczesne systemy online. Porządek operacyjny, lepsze decyzje.",              button: { text: "Zmniejsz Koszty o 35%", href: "contact" }
+              title: "Digitalizacja Biznesu",              description: "Zamieniamy Excel i papier na nowoczesne systemy online. Porządek operacyjny, lepsze decyzje.",              button: { text: "Zmniejsz Koszty o 35%", href: "/rozpocznij-projekt" }
             }
           ]}
           animationType="slide-up"
@@ -141,8 +142,8 @@ export default function LandingPage() {
               {/* Case Study 1: Recruitment Platform */}
               <div className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="relative overflow-hidden bg-gradient-to-br from-blue-900 to-slate-900 aspect-video">
-                  <img 
-                    src="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/professional-mockup-of-a-recruitment-pla-1772646443733-1f2246bd.png?_wi=1" 
+                  <img
+                    src="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/professional-mockup-of-a-recruitment-pla-1772646443733-1f2246bd.png?_wi=1"
                     alt="Platforma Rekrutacyjna AI"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
@@ -182,8 +183,8 @@ export default function LandingPage() {
               {/* Case Study 2: Workshop Management */}
               <div className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="relative overflow-hidden bg-gradient-to-br from-orange-900 to-red-900 aspect-video">
-                  <img 
-                    src="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/workshop-management-system-interface-dis-1772646442811-e87de6cc.png?_wi=1" 
+                  <img
+                    src="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/workshop-management-system-interface-dis-1772646442811-e87de6cc.png?_wi=1"
                     alt="System Zarządzania Warsztatem"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
@@ -223,8 +224,8 @@ export default function LandingPage() {
               {/* Case Study 3: Marketing Agency CRM */}
               <div className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="relative overflow-hidden bg-gradient-to-br from-purple-900 to-indigo-900 aspect-video">
-                  <img 
-                    src="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/marketing-agency-crm-dashboard-with-cont-1772646443395-5375cae3.png?_wi=1" 
+                  <img
+                    src="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AUTdamE0711SH4qf6OPq0pSgOh/marketing-agency-crm-dashboard-with-cont-1772646443395-5375cae3.png?_wi=1"
                     alt="CRM dla Agencji Marketingowej"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
@@ -367,8 +368,8 @@ export default function LandingPage() {
           text="Masz pomysł? Zbudujmy system, który zacznie na Ciebie pracować."
           animationType="entrance-slide"
           buttons={[
-            { text: "Rozpocznij Projekt", href: "#" },
-            { text: "Rozmowa Strategiczna", href: "#" }
+            { text: "Rozpocznij Projekt", href: "/rozpocznij-projekt" },
+            { text: "Rozmowa Strategiczna", href: "/rozpocznij-projekt" }
           ]}
           background={{ variant: "sparkles-gradient" }}
           useInvertedBackground={false}
