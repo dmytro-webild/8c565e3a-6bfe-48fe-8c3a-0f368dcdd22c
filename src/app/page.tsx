@@ -13,6 +13,19 @@ import FooterCard from '@/components/sections/footer/FooterCard';
 import { Award, BarChart3, Brain, CheckCircle2, Code2, Github, Handshake, Lightbulb, Linkedin, Mail, MapPin, Phone, Search, Target, TrendingUp, Workflow, Wrench, Zap, ShieldCheck, Users, Sparkles, TrendingDown, RotateCw, Activity } from "lucide-react";
 
 export default function LandingPage() {
+  const handleNavigation = (sectionId: string) => {
+    if (sectionId === "hero") {
+      // Always go to home and scroll to hero
+      window.location.href = "/#hero";
+    } else if (sectionId === "cases") {
+      // Always go to home and scroll to cases
+      window.location.href = "/#cases";
+    } else if (sectionId === "contact") {
+      // Navigate to contact form page
+      window.location.href = "/rozpocznij-projekt";
+    }
+  };
+
   return (
     <ThemeProvider
       defaultButtonVariant="expand-hover"
@@ -30,9 +43,9 @@ export default function LandingPage() {
         <NavbarStyleFullscreen
           brandName="WOLNY STUDIO AI"
           navItems={[
-            { name: "Start", id: "innowacyjne-rozwiazania" },
-            { name: "Realizacje", id: "cases" },
-            { name: "Rozpocznij projekt", id: "contact" }
+            { name: "Start", id: "hero", onClick: () => handleNavigation("hero") },
+            { name: "Realizacje", id: "cases", onClick: () => handleNavigation("cases") },
+            { name: "Rozpocznij projekt", id: "contact", onClick: () => handleNavigation("contact") }
           ]}
           bottomLeftText="Rajcza, Polska"
           bottomRightText="wsa.labs.wolny@gmail.com"
@@ -48,8 +61,8 @@ export default function LandingPage() {
           tagAnimation="slide-up"
           background={{ variant: "sparkles-gradient" }}
           buttons={[
-            { text: "Rozpocznij projekt", href: "contact" },
-            { text: "Zobacz realizacje", href: "cases" }
+            { text: "Rozpocznij projekt", onClick: () => handleNavigation("contact") },
+            { text: "Zobacz realizacje", onClick: () => handleNavigation("cases") }
           ]}
           buttonAnimation="slide-up"
           mediaItems={[
@@ -106,15 +119,15 @@ export default function LandingPage() {
           features={[
             {
               icon: Code2,
-              title: "Systemy i Aplikacje Webowe",              description: "Dedykowane platformy, CRM, systemy zarządzania, panele klienta. Rozwiązania stworzone pod Twoją firmę.",              button: { text: "Oszczędź 20h/tydzień", href: "contact" }
+              title: "Systemy i Aplikacje Webowe",              description: "Dedykowane platformy, CRM, systemy zarządzania, panele klienta. Rozwiązania stworzone pod Twoją firmę.",              button: { text: "Oszczędź 20h/tydzień", onClick: () => handleNavigation("contact") }
             },
             {
               icon: Brain,
-              title: "Automatyzacje i AI",              description: "Boty AI, automatyczna obsługa klienta, scoring CV, workflow, integracje API. Procesy które pracują 24/7.",              button: { text: "Zwiększ Przychód o 40%", href: "contact" }
+              title: "Automatyzacje i AI",              description: "Boty AI, automatyczna obsługa klienta, scoring CV, workflow, integracje API. Procesy które pracują 24/7.",              button: { text: "Zwiększ Przychód o 40%", onClick: () => handleNavigation("contact") }
             },
             {
               icon: TrendingUp,
-              title: "Digitalizacja Biznesu",              description: "Zamieniamy Excel i papier na nowoczesne systemy online. Porządek operacyjny, lepsze decyzje.",              button: { text: "Zmniejsz Koszty o 35%", href: "contact" }
+              title: "Digitalizacja Biznesu",              description: "Zamieniamy Excel i papier na nowoczesne systemy online. Porządek operacyjny, lepsze decyzje.",              button: { text: "Zmniejsz Koszty o 35%", onClick: () => handleNavigation("contact") }
             }
           ]}
           animationType="slide-up"
@@ -304,19 +317,19 @@ export default function LandingPage() {
           features={[
             {
               icon: BarChart3,
-              title: "01 - Analiza i Strategia",              description: "Pogłębiamy się w Twoim biznesie. Problemy, wyzwania, cele. Budujemy strategię opartą na danych.",              button: { text: "Dowiedz się więcej", href: "#" }
+              title: "01 - Analiza i Strategia",              description: "Pogłębiamy się w Twoim biznesie. Problemy, wyzwania, cele. Budujemy strategię opartą na danych.",              button: { text: "Dowiedz się więcej", onClick: () => handleNavigation("contact") }
             },
             {
               icon: Search,
-              title: "02 - Projekt UX/UI",              description: "Projektujemy doświadczenie użytkownika i interfejs. Funkcjonalne, piękne, intuicyjne rozwiązania.",              button: { text: "Dowiedz się więcej", href: "#" }
+              title: "02 - Projekt UX/UI",              description: "Projektujemy doświadczenie użytkownika i interfejs. Funkcjonalne, piękne, intuicyjne rozwiązania.",              button: { text: "Dowiedz się więcej", onClick: () => handleNavigation("contact") }
             },
             {
               icon: Wrench,
-              title: "03 - Development",              description: "Programujemy. Testujemy. Optymalizujemy. Kod najwyższej klasy, architektura przyszłościowa.",              button: { text: "Dowiedz się więcej", href: "#" }
+              title: "03 - Development",              description: "Programujemy. Testujemy. Optymalizujemy. Kod najwyższej klasy, architektura przyszłościowa.",              button: { text: "Dowiedz się więcej", onClick: () => handleNavigation("contact") }
             },
             {
               icon: CheckCircle2,
-              title: "04 - Wdrożenie i Optymalizacja",              description: "Launch. Monitoring. Wsparcie. Ciągłe ulepszanie systemu na bazie rzeczywistych danych użytkowników.",              button: { text: "Dowiedz się więcej", href: "#" }
+              title: "04 - Wdrożenie i Optymalizacja",              description: "Launch. Monitoring. Wsparcie. Ciągłe ulepszanie systemu na bazie rzeczywistych danych użytkowników.",              button: { text: "Dowiedz się więcej", onClick: () => handleNavigation("contact") }
             }
           ]}
           animationType="slide-up"
@@ -365,8 +378,8 @@ export default function LandingPage() {
           text="Masz pomysł? Zbudujmy system, który zacznie na Ciebie pracować."
           animationType="entrance-slide"
           buttons={[
-            { text: "Rozpocznij Projekt", href: "/rozpocznij-projekt" },
-            { text: "Rozmowa Strategiczna", href: "/rozpocznij-projekt" }
+            { text: "Rozpocznij Projekt", onClick: () => handleNavigation("contact") },
+            { text: "Rozmowa Strategiczna", onClick: () => handleNavigation("contact") }
           ]}
           background={{ variant: "sparkles-gradient" }}
           useInvertedBackground={false}
