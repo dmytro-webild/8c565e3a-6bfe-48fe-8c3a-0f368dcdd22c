@@ -1,8 +1,15 @@
 import type { Metadata } from "next";
+import { DM_Sans } from "next/font/google";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",  subsets: ["latin"],
+});
+
+const inter = Inter({
+  variable: "--font-inter",  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "WOLNY STUDIO AI",  description: "Budujemy systemy, które zarabiają dla Twojej firmy."
@@ -15,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pl">
-      <body className={inter.className}>{children}
+      <body className={`${dmSans.variable} ${inter.variable}`}>{children}
         <script
           dangerouslySetInnerHTML={{
             __html: `
