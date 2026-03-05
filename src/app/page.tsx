@@ -30,12 +30,9 @@ export default function LandingPage() {
         <NavbarStyleFullscreen
           brandName="WOLNY STUDIO AI"
           navItems={[
-            { name: "Usługi", id: "services" },
+            { name: "Start", id: "hero" },
             { name: "Realizacje", id: "cases" },
-            { name: "Proces", id: "process" },
-            { name: "O nas", id: "about" },
-            { name: "Kontakt", id: "contact" },
-            { name: "Rozpocznij projekt", id: "/rozpocznij-projekt" }
+            { name: "Rozpocznij projekt", id: "contact" }
           ]}
           bottomLeftText="Rajcza, Polska"
           bottomRightText="wsa.labs.wolny@gmail.com"
@@ -51,7 +48,7 @@ export default function LandingPage() {
           tagAnimation="slide-up"
           background={{ variant: "sparkles-gradient" }}
           buttons={[
-            { text: "Rozpocznij projekt", href: "/rozpocznij-projekt" },
+            { text: "Rozpocznij projekt", href: "contact" },
             { text: "Zobacz realizacje", href: "cases" }
           ]}
           buttonAnimation="slide-up"
@@ -109,15 +106,15 @@ export default function LandingPage() {
           features={[
             {
               icon: Code2,
-              title: "Systemy i Aplikacje Webowe",              description: "Dedykowane platformy, CRM, systemy zarządzania, panele klienta. Rozwiązania stworzone pod Twoją firmę.",              button: { text: "Oszczędź 20h/tydzień", href: "/rozpocznij-projekt" }
+              title: "Systemy i Aplikacje Webowe",              description: "Dedykowane platformy, CRM, systemy zarządzania, panele klienta. Rozwiązania stworzone pod Twoją firmę.",              button: { text: "Oszczędź 20h/tydzień", href: "contact" }
             },
             {
               icon: Brain,
-              title: "Automatyzacje i AI",              description: "Boty AI, automatyczna obsługa klienta, scoring CV, workflow, integracje API. Procesy które pracują 24/7.",              button: { text: "Zwiększ Przychód o 40%", href: "/rozpocznij-projekt" }
+              title: "Automatyzacje i AI",              description: "Boty AI, automatyczna obsługa klienta, scoring CV, workflow, integracje API. Procesy które pracują 24/7.",              button: { text: "Zwiększ Przychód o 40%", href: "contact" }
             },
             {
               icon: TrendingUp,
-              title: "Digitalizacja Biznesu",              description: "Zamieniamy Excel i papier na nowoczesne systemy online. Porządek operacyjny, lepsze decyzje.",              button: { text: "Zmniejsz Koszty o 35%", href: "/rozpocznij-projekt" }
+              title: "Digitalizacja Biznesu",              description: "Zamieniamy Excel i papier na nowoczesne systemy online. Porządek operacyjny, lepsze decyzje.",              button: { text: "Zmniejsz Koszty o 35%", href: "contact" }
             }
           ]}
           animationType="slide-up"
