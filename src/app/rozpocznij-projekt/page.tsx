@@ -59,12 +59,9 @@ export default function RozpocznijProjektPage() {
         <NavbarStyleFullscreen
           brandName="WOLNY STUDIO AI"
           navItems={[
-            { name: "Usługi", id: "services" },
+            { name: "Start", id: "hero" },
             { name: "Realizacje", id: "cases" },
-            { name: "Proces", id: "process" },
-            { name: "O nas", id: "about" },
-            { name: "Kontakt", id: "contact" },
-            { name: "Rozpocznij projekt", id: "/rozpocznij-projekt" }
+            { name: "Rozpocznij projekt", id: "contact" }
           ]}
           bottomLeftText="Rajcza, Polska"
           bottomRightText="wsa.labs.wolny@gmail.com"
