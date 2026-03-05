@@ -59,7 +59,7 @@ export default function RozpocznijProjektPage() {
         <NavbarStyleFullscreen
           brandName="WOLNY STUDIO AI"
           navItems={[
-            { name: "Start", id: "hero" },
+            { name: "Start", id: "innowacyjne-rozwiazania" },
             { name: "Realizacje", id: "cases" },
             { name: "Rozpocznij projekt", id: "contact" }
           ]}

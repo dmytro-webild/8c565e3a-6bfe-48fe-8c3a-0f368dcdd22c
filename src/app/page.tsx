@@ -30,7 +30,7 @@ export default function LandingPage() {
         <NavbarStyleFullscreen
           brandName="WOLNY STUDIO AI"
           navItems={[
-            { name: "Start", id: "hero" },
+            { name: "Start", id: "innowacyjne-rozwiazania" },
             { name: "Realizacje", id: "cases" },
             { name: "Rozpocznij projekt", id: "contact" }
           ]}
@@ -79,7 +79,7 @@ export default function LandingPage() {
         />
       </div>
 
-      <div id="about" data-section="about">
+      <div id="innowacyjne-rozwiazania" data-section="innowacyjne-rozwiazania">
         <TestimonialAboutCard
           tag="Kim Jesteśmy"
           tagIcon={Lightbulb}
