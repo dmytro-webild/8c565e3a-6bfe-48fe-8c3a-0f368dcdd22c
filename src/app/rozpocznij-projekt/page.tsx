@@ -20,6 +20,16 @@ export default function RozpocznijProjektPage() {
     }));
   };
 
+  const handleNavigation = (sectionId: string) => {
+    if (sectionId === "hero") {
+      window.location.href = "/#hero";
+    } else if (sectionId === "cases") {
+      window.location.href = "/#cases";
+    } else if (sectionId === "contact") {
+      window.location.href = "/rozpocznij-projekt";
+    }
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
@@ -59,9 +69,9 @@ export default function RozpocznijProjektPage() {
         <NavbarStyleFullscreen
           brandName="WOLNY STUDIO AI"
           navItems={[
-            { name: "Start", id: "innowacyjne-rozwiazania" },
-            { name: "Realizacje", id: "cases" },
-            { name: "Rozpocznij projekt", id: "contact" }
+            { name: "Start", id: "hero", onClick: () => handleNavigation("hero") },
+            { name: "Realizacje", id: "cases", onClick: () => handleNavigation("cases") },
+            { name: "Rozpocznij projekt", id: "contact", onClick: () => handleNavigation("contact") }
           ]}
           bottomLeftText="Rajcza, Polska"
           bottomRightText="wsa.labs.wolny@gmail.com"
